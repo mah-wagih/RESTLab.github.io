@@ -357,7 +357,7 @@ input, select, textarea {
 		}
 
 		.row > .col-3 {
-			width: 25%;
+			width: 20%;
 		}
 
 		.row > .off-3 {
@@ -3958,4 +3958,147 @@ input, select, textarea {
 
 .greentext gt {
   color: #c1d102;
+}
+
+/* Three columns side by side */
+.column_team {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column_team {
+    width: 100%;
+    display: block;
+	color: #FFFF;
+  }
+}
+
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #4F5961;
+
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+color:#c1d102
+}
+
+
+
+
+/* GPT content */
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.team-card {
+  flex: 0 1 calc(33.33% - 20px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover .card-header img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 20px;
+}
+
+.team-card:hover .card-overlay {
+  opacity: 1;
+}
+
+
+.regular-card {
+  flex: 0 1 calc(33.33% - 20px); /* 3 cards per row */
+  background-color: #fff;
+}
+
+.wide-card {
+  flex: 0 1 calc(66.66% - 20px); /* 2 cards per row */
+  background-color: #f2f2f2;
+  flex-direction: row;
+  display: flex;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
 }
