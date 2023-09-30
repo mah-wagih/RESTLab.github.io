@@ -3800,6 +3800,227 @@ input, select, textarea {
 
 		}
 		
+
+
+/* TEAM Banner 2 */
+
+/* Outreach Banner, banner2 */
+
+
+	#banner2 {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		background-image: url("../../images/teamlab2.jpg");
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		padding: 6em 0 2em 0 ;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 0 !important;
+		cursor: default;
+		height: 60vh;
+		margin-bottom: -3.25em;
+		max-height: 32em;
+		min-height: 22em;
+		position: relative;
+		top: -3.25em;
+	}
+
+		#banner2:after {
+			-moz-transition: opacity 5s ease;
+			-webkit-transition: opacity 5s ease;
+			-ms-transition: opacity 5.5s ease;
+			transition: opacity 5.5s ease;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			pointer-events: none;
+			background-color: #006560;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.6;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		#banner2 h1 {
+			font-size: 3.25em;
+		}
+
+		#banner2 > .inner {
+			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+			padding: 0 !important;
+			position: relative;
+			z-index: 2;
+		}
+
+			#banner2 > .inner .image {
+				display: none;
+			}
+
+			#banner2 > .inner header {
+				width: auto;
+			}
+
+				#banner2 > .inner header > :first-child {
+					width: auto;
+				}
+
+					#banner2 > .inner header > :first-child:after {
+						max-width: 100%;
+					}
+
+			#banner2 > .inner .content {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				margin: 0 0 2em 0;
+			}
+
+				#banner2 > .inner .content > * {
+					margin-right: 1.5em;
+					margin-bottom: 0;
+				}
+
+				#banner2 > .inner .content > :last-child {
+					margin-right: 0;
+				}
+
+				#banner2 > .inner .content p {
+					font-size: 0.7em;
+					font-weight: 600;
+					letter-spacing: 0.25em;
+					text-transform: uppercase;
+				}
+
+		#banner2.major {
+			height: 75vh;
+			min-height: 30em;
+			max-height: 50em;
+		}
+
+			#banner2.major.alt {
+				opacity: 0.5;
+			}
+
+		#banner2.style1:after {
+			background-color: #6fc3df;
+		}
+
+		#banner2.style2:after {
+			background-color: #8d82c4;
+		}
+
+		#banner2.style3:after {
+			background-color: #ec8d81;
+		}
+
+		#banner2.style4:after {
+			background-color: #e7b788;
+		}
+
+		#banner2.style5:after {
+			background-color: #8ea9e8;
+		}
+
+		#banner2.style6:after {
+			background-color: #87c5a4;
+		}
+
+		body.is-preload #banner2:after {
+			opacity: 1.0;
+		}
+
+		body.is-preload #banner2 > .inner {
+			-moz-filter: blur(0.125em);
+			-webkit-filter: blur(0.125em);
+			-ms-filter: blur(0.125em);
+			filter: blur(0.125em);
+			-moz-transform: translateX(-0.5em);
+			-webkit-transform: translateX(-0.5em);
+			-ms-transform: translateX(-0.5em);
+			transform: translateX(-0.5em);
+			opacity: 0;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner2 {
+				background-attachment: scroll;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner2 {
+				padding: 5em 0 1em 0 ;
+				height: auto;
+				margin-bottom: -2.75em;
+				max-height: none;
+				min-height: 0;
+				top: -2.75em;
+			}
+
+				#banner2 h1 {
+					font-size: 2em;
+				}
+
+				#banner2 > .inner .content {
+					display: block;
+				}
+
+					#banner2 > .inner .content > * {
+						margin-right: 0;
+						margin-bottom: 2em;
+					}
+
+				#banner2.major {
+					height: auto;
+					min-height: 0;
+					max-height: none;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner2 {
+				padding: 6em 0 2em 0 ;
+			}
+
+				#banner2 > .inner .content p br {
+					display: none;
+				}
+
+				#banner2.major {
+					padding: 8em 0 4em 0 ;
+				}
+
+		}
+
+
+
+
 		
 
 /* Main */
@@ -4176,145 +4397,106 @@ input, select, textarea {
   color: #c1d102;
 }
 
-/* Three columns side by side */
-.column_team {
-  float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-  padding: 0 8px;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column_team {
-    width: 100%;
-    display: block;
-	color: #FFFF;
-  }
-}
 
 
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #4F5961;
 
-}
 
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
-}
 
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
-.title {
-color:#c1d102
+
+
+
+
+/* Team Section */
+/* Team Member Cards - Updated styles to handle hover details */
+/* Team Member Cards - Updated styles to handle fixed width and hover details */
+/* Team Members Container */
+/* Team Members Container */
+
+
+/* Team Section */
+#team {
+  text-align: center;
 }
 
 
 
-
-/* GPT content */
-
-.team-container {
+.team-members {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  font-size: 0; /* Remove white space between inline-block elements */
 }
 
-.team-card {
-  flex: 0 1 calc(33.33% - 20px);
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+/* Team Member Cards - Updated styles to handle fixed width and hover details */
+.team-member {
+  box-sizing: border-box;
+  width: calc(30% - 2em); /* Adjust the width as needed to fit 3 cards per line with margin */
+  margin: 1em;
   overflow: hidden;
-  margin: 10px;
+  border-radius: 8px;
+  background-color: #333; /* Dark grey background */
+  color: #fff; /* White text */
   position: relative;
-  transition: transform 0.3s ease-in-out;
+  display: inline-block; /* Make them inline-block to remove line breaks */
 }
 
-.team-card:hover {
-  transform: translateY(-5px);
-}
-
-.card-header {
-  height: 180px;
+.team-member .profile-picture {
   overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  height: 450px; /* Set a fixed height for the profile picture container */
 }
 
-.card-header img {
+.team-member img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  height: 100%; /* Set the height to 100% to cover the container */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  display: block;
+  border-radius: 8px 8px 0 0;
 }
 
-.team-card:hover .card-header img {
-  transform: scale(1.1);
-}
 
-.card-content {
-  padding: 20px;
-}
-
-.card-content h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.card-content p {
-  font-size: 1rem;
-  color: #666;
-  margin-top: 5px;
-}
-
-.card-overlay {
+.team-member .details-container {
+  display: none; /* Hidden by default */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-  padding: 20px;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark grey background for details */
+  border-radius: 8px;
+  text-align: center;
 }
 
-.team-card:hover .card-overlay {
-  opacity: 1;
+.team-member:hover .details-container {
+  display: block; /* Show on hover */
 }
 
-
-.regular-card {
-  flex: 0 1 calc(33.33% - 20px); /* 3 cards per row */
-  background-color: #fff;
+.team-member h3,
+.team-member p {
+  margin: 0;
 }
 
-.wide-card {
-  flex: 0 1 calc(66.66% - 20px); /* 2 cards per row */
-  background-color: #f2f2f2;
-  flex-direction: row;
-  display: flex;
+.team-member h3 {
+  margin-top: 0.5em;
 }
 
-.card-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px;
+.team-member p {
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+/* Social Media Icons */
+.team-member .icons {
+  margin-top: 1em;
+}
+
+.team-member .icons a {
+  margin-right: 0.5em;
+  color: #fff; /* White text */
+}
+
+/* Hover Effect */
+.team-member:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Adjust shadow color as needed */
 }
