@@ -3059,6 +3059,124 @@ input, select, textarea {
 
 		}
 
+
+
+/* Spotlights2 from GPT */
+
+
+/* Spotlights2 */
+
+.spotlights2 {
+  border-top: 0 !important;
+}
+
+.spotlights2 + * {
+  border-top: 0 !important;
+}
+
+.spotlights2 > section {
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlights2 > section:nth-child(odd) {
+  background-color: #5B4D94; /* Background color for odd sections */
+}
+
+.spotlights2 > section:nth-child(even) {
+  background-color: #385A4F; /* Background color for even sections */
+}
+
+.spotlights2 > section > .image {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.spotlights2 > section > .image img {
+  border-radius: 0;
+  display: block;
+  width: 100%;
+}
+
+.spotlights2 > section > .image:before {
+  background: rgba(36, 41, 67, 0.9);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.spotlights2 > section > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.spotlights2 > section > .content > .inner {
+  margin: 0 auto;
+  max-width: 65em;
+  width: 100%;
+}
+
+@media screen and (max-width: 1680px) {
+  .spotlights2 > section > .image {
+    width: 40%;
+  }
+
+  .spotlights2 > section > .content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .spotlights2 > section > .image {
+    width: 45%;
+  }
+
+  .spotlights2 > section > .content {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .spotlights2 > section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spotlights2 > section > .image {
+    width: 100%;
+  }
+
+  .spotlights2 > section > .content {
+    padding: 4em 2em 2em 2em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .spotlights2 > section > .content {
+    padding: 3em 1.5em 1em 1.5em;
+  }
+}
+
+
+
+
+
+
 /* Header */
 
 	@-moz-keyframes reveal-header {
@@ -4415,19 +4533,19 @@ input, select, textarea {
 
 
 /* Team Section */
+/* Team Section */
+
 #team {
   text-align: center;
 }
 
-
-
-.team-members {
+.team-members-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: 0; /* Remove white space between inline-block elements */
 }
 
-/* Team Member Cards - Updated styles to handle fixed width and hover details */
 .team-member {
   box-sizing: border-box;
   width: calc(30% - 2em); /* Adjust the width as needed to fit 3 cards per line with margin */
@@ -4448,28 +4566,27 @@ input, select, textarea {
 
 .team-member img {
   width: 100%;
-  height: 100%; /* Set the height to 100% to cover the container */
-  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  height: 100%;
+  object-fit: cover;
   display: block;
   border-radius: 8px 8px 0 0;
 }
 
-
 .team-member .details-container {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark grey background for details */
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   text-align: center;
 }
 
 .team-member:hover .details-container {
-  display: block; /* Show on hover */
+  display: block;
 }
 
 .team-member h3,
@@ -4486,17 +4603,15 @@ input, select, textarea {
   margin-top: 0.5em;
 }
 
-/* Social Media Icons */
 .team-member .icons {
   margin-top: 1em;
 }
 
 .team-member .icons a {
   margin-right: 0.5em;
-  color: #fff; /* White text */
+  color: #fff;
 }
 
-/* Hover Effect */
 .team-member:hover {
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Adjust shadow color as needed */
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
